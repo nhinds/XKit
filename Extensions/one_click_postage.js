@@ -977,8 +977,8 @@ XKit.extensions.one_click_postage = new Object({
 				|| $(e.target).is('input,textarea')) {
 			return;
 		}
-		// Tumblr puts 7-8px padding at the top of the screen when you use J/K to navigate
-		var screenPos = $(window).scrollTop() + 10;
+		// Tumblr puts ~68px padding at the top of the screen when you use J/K to navigate
+		var screenPos = $(window).scrollTop() + 70;
 
 		// Find the post at the top of the screen, if there is one
 		$(".reblog_button,.post_control.reblog").filter(':visible').each(function() {
